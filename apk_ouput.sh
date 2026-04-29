@@ -2,7 +2,7 @@
 
 # ==========================================
 # Script Automático: Build Dist y APK
-# Proyecto: MySite (Capacitor + docs)
+# Proyecto: MySite (Capacitor + www)
 # ==========================================
 
 set -u
@@ -10,7 +10,7 @@ set -u
 # Rutas principales del proyecto
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_ROOT="$SCRIPT_DIR"
-WEB_DIR="$PROJECT_ROOT/docs"
+WEB_DIR="$PROJECT_ROOT/www"
 ANDROID_DIR="$PROJECT_ROOT/android"
 APK_PATH="$ANDROID_DIR/app/build/outputs/apk/debug/app-debug.apk"
 
@@ -54,10 +54,10 @@ if [ -f "$PROJECT_ROOT/package.json" ] && command -v pnpm >/dev/null 2>&1; then
         echo "Se encontró script 'build'. Compilando antes de sincronizar..."
         pnpm --dir "$PROJECT_ROOT" run build || fail "Falló la compilación del proyecto."
     else
-        echo "No hay script 'build' en package.json. Se usará directamente la carpeta docs/."
+        echo "No hay script 'build' en package.json. Se usará directamente la carpeta www/."
     fi
 else
-    echo "No se ejecuta build. Se usará directamente la carpeta docs/."
+    echo "No se ejecuta build. Se usará directamente la carpeta www/."
 fi
 echo "✅ Archivos web listos."
 
