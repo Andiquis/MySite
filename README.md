@@ -4,6 +4,12 @@ Portafolio personal desarrollado como una experiencia web moderna, responsiva y 
 
 ![Captura referencial del portafolio](./assets/captura.png)
 
+<p align="center">
+  <a href="https://andiquis.github.io/MySite/www/" target="_blank">
+    <img src="https://img.shields.io/badge/Ver%20Vista%20Previa-00D2FF?style=for-the-badge&logo=googlechrome&logoColor=white&labelColor=0A0A0E" alt="Ver vista previa del portafolio">
+  </a>
+</p>
+
 ## Descripción
 
 Este sitio funciona como carta de presentación profesional para mostrar experiencia en desarrollo de software, backend, frontend, arquitectura de sistemas, despliegues y proyectos aplicados en distintos sectores.
