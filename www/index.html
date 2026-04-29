@@ -1,24 +1,33 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Anderson Quispe | Software Engineer</title>
-    <meta name="description" content="Portafolio Profesional de Anderson Quispe Quispe, Software Engineer especializado en Backend NestJS, Angular y Arquitectura de Sistemas.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="./styles.css">
-</head>
-<body>
+    <meta
+      name="description"
+      content="Portafolio Profesional de Anderson Quispe Quispe, Software Engineer especializado en Backend NestJS, Angular y Arquitectura de Sistemas."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
     <!-- Preloader -->
     <div id="preloader">
-        <div class="terminal-loader">
-            <div class="loader-text">INICIANDO SISTEMA...</div>
-            <div class="loader-percentage">0%</div>
-            <div class="loader-bar"><div class="loader-fill"></div></div>
-        </div>
+      <div class="terminal-loader">
+        <div class="loader-text">INICIANDO SISTEMA...</div>
+        <div class="loader-percentage">0%</div>
+        <div class="loader-bar"><div class="loader-fill"></div></div>
+      </div>
     </div>
 
     <!-- Custom Cursor -->
@@ -29,347 +38,433 @@
     <canvas id="particle-canvas"></canvas>
 
     <div class="site-wrapper">
-        <nav class="glass-nav" id="navbar">
-            <a class="brand" href="#home" aria-label="Ir al inicio">
-                <span class="logo-mark" aria-hidden="true">
-                    <i class="fas fa-code"></i>
-                </span>
-                <span class="brand-copy">
-                    <span class="brand-name">Anderson Quispe</span>
-                    <span class="brand-role">Software Engineer</span>
-                </span>
-            </a>
+      <nav class="glass-nav" id="navbar">
+        <a class="brand" href="#home" aria-label="Ir al inicio">
+          <span class="logo-mark" aria-hidden="true">
+            <i class="fas fa-code"></i>
+          </span>
+          <span class="brand-copy">
+            <span class="brand-name">Anderson Quispe</span>
+            <span class="brand-role">Software Engineer</span>
+          </span>
+        </a>
 
-            <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-panel">
-                <i class="fas fa-bars"></i>
-            </button>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+          aria-controls="nav-panel"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
 
-            <div class="nav-panel" id="nav-panel">
-                <ul class="nav-links">
-                    <li><a href="#about"><span>01</span> Sobre Mí</a></li>
-                    <li><a href="#skills"><span>02</span> Habilidades</a></li>
-                    <li><a href="#education"><span>03</span> Educación</a></li>
-                    <li><a href="#projects"><span>04</span> Proyectos</a></li>
+        <div class="nav-panel" id="nav-panel">
+          <ul class="nav-links">
+            <li>
+              <a href="#about"><span>01</span> Sobre Mí</a>
+            </li>
+            <li>
+              <a href="#skills"><span>02</span> Habilidades</a>
+            </li>
+            <li>
+              <a href="#education"><span>03</span> Educación</a>
+            </li>
+            <li>
+              <a href="#projects"><span>04</span> Proyectos</a>
+            </li>
+          </ul>
+          <a href="./assets/docs/CV_ANDERSON_28042026.pdf" class="nav-cta" download>
+            <i class="fas fa-file-download"></i>
+            CV
+          </a>
+        </div>
+      </nav>
+
+      <header class="hero" id="home">
+        <div class="container hero-content-wrapper">
+          <div class="hero-content">
+            <p class="greeting reveal-up">¡Hola Mundo! 👋 Soy</p>
+            <h1 class="glitch reveal-up delay-1" data-text="Anderson Quispe">Anderson Quispe</h1>
+            <h2 class="role reveal-up delay-2">
+              <span id="typing-text"></span><span class="cursor">|</span>
+            </h2>
+            <p class="hero-desc reveal-up delay-3">
+              Ingeniero de Software enfocado en arquitecturas escalables, APIs RESTful y sistemas
+              construidos para producción. Egresado de Diseño y Desarrollo de Software (2022-2025).
+            </p>
+            <div class="hero-actions reveal-up delay-4">
+              <a
+                href="./assets/docs/CV_ANDERSON_28042026.pdf"
+                class="btn btn-primary mag-btn"
+                download
+                ><i class="fas fa-file-download"></i> Descargar CV</a
+              >
+              <a
+                href="https://andiquis.github.io/Present/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-secondary mag-btn"
+              >
+                Ver Tarjeta
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-image reveal-left delay-4">
+            <div class="profile-glow"></div>
+            <img src="./assets/image.png" alt="Anderson Quispe - Profile" class="profile-pic" />
+            <div class="float-badge fb-1 glass-card"><i class="fab fa-angular"></i></div>
+            <div class="float-badge fb-2 glass-card"><i class="fab fa-node-js"></i></div>
+            <div class="float-badge fb-3 glass-card"><i class="fas fa-server"></i></div>
+          </div>
+        </div>
+
+        <div class="scroll-indicator">
+          <span>Scroll</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+      </header>
+
+      <section id="about" class="section">
+        <div class="container">
+          <h2 class="section-title reveal-fade" data-text="01. Sobre Mí">
+            <span>01.</span> Sobre Mí
+          </h2>
+          <div class="about-grid">
+            <div class="about-text glass-card card-glow reveal-left">
+              <p>
+                Soy un desarrollador de software con experiencia combinando diseño técnico,
+                implementación de módulos y optimización de procesos. Mi enfoque profesional se
+                puede resumir en:
+              </p>
+              <blockquote class="accent-quote">
+                "Código claro. Arquitectura con intención. Documentación que genera confianza."
+              </blockquote>
+              <p>
+                He participado en soluciones para salud, turismo, logística y gestión operativa,
+                enfocándome en Angular para interacciones dinámicas en el cliente y NestJS para el
+                robusto ecosistema backend.
+              </p>
+            </div>
+            <div class="about-stats glass-card card-glow reveal-right">
+              <div class="stat-item">
+                <i class="fas fa-code"></i>
+                <h3>Full-Stack</h3>
+                <p>Sistemas End-to-End</p>
+              </div>
+              <div class="stat-item">
+                <i class="fas fa-server"></i>
+                <h3>Arquitectura</h3>
+                <p>Clean & Modular</p>
+              </div>
+              <div class="stat-item">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Seguridad</h3>
+                <p>Prevención & Diseño Resistente</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="container">
+          <h2 class="section-title reveal-fade" data-text="02. Habilidades">
+            <span>02.</span> Habilidades
+          </h2>
+          <div class="skills-grid">
+            <div class="skill-category glass-card card-glow hover-glow reveal-up">
+              <div class="category-icon"><i class="fas fa-database"></i></div>
+              <h3>Backend & DB</h3>
+              <div class="skill-tags">
+                <span>NestJS</span><span>Node.js</span><span>PHP</span><span>MySQL</span
+                ><span>SQLite</span><span>Prisma ORM</span><span>REST APIs</span>
+              </div>
+            </div>
+
+            <div class="skill-category glass-card card-glow hover-glow reveal-up delay-1">
+              <div class="category-icon"><i class="fas fa-laptop-code"></i></div>
+              <h3>Frontend</h3>
+              <div class="skill-tags">
+                <span>Angular</span><span>TypeScript</span><span>JavaScript</span><span>HTML5</span
+                ><span>SCSS</span><span>CSS3</span>
+              </div>
+            </div>
+
+            <div class="skill-category glass-card card-glow hover-glow reveal-up delay-2">
+              <div class="category-icon"><i class="fas fa-brain"></i></div>
+              <h3>Data & AI</h3>
+              <div class="skill-tags">
+                <span>Python</span><span>TensorFlow</span><span>PyTorch</span><span>OpenCV</span
+                ><span>Scikit-Learn</span><span>YOLO</span><span>Pandas</span>
+              </div>
+            </div>
+
+            <div class="skill-category glass-card card-glow hover-glow reveal-up delay-3">
+              <div class="category-icon"><i class="fas fa-tools"></i></div>
+              <h3>Herramientas & Mobile</h3>
+              <div class="skill-tags">
+                <span>Git/GitHub</span><span>Linux</span><span>Capacitor</span
+                ><span>Kali Linux</span><span>Nmap</span><span>Swagger</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="education" class="section">
+        <div class="container">
+          <h2 class="section-title reveal-fade" data-text="03. Educación & Certificados">
+            <span>03.</span> Educación & Certificados
+          </h2>
+
+          <div class="timeline" id="timeline-container">
+            <!-- Progress Line -->
+            <div class="timeline-line">
+              <div class="timeline-progress" id="timeline-progress"></div>
+            </div>
+            <div class="timeline-item reveal-left">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content glass-card card-glow">
+                <span class="timeline-date">2022 - 2025</span>
+                <h3>Egresado en Desarrollo de Software</h3>
+                <h4>Institución: SENATI</h4>
+                <p>
+                  Egresado de la carrera con alto enfoque en innovación tecnológica. 4to lugar en el
+                  concurso SENATI Innova, Dirección Zonal Cusco.
+                </p>
+                <span class="badge">Diploma de Honor</span>
+              </div>
+            </div>
+
+            <div class="timeline-item reveal-left">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content glass-card card-glow">
+                <span class="timeline-date">2025</span>
+                <h3>Gestión de Proyectos Ágiles & Lean</h3>
+                <h4>Institución: SENATI</h4>
+                <p>
+                  Formación en dirección de proyectos aplicando marcos de trabajo Agile y enfoques
+                  corporativos Lean para reducción de residuos y eficiencia.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-item reveal-left">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content glass-card card-glow">
+                <span class="timeline-date">2022 - 2023</span>
+                <h3>Tecnología de la Información</h3>
+                <h4>Institución: Cisco Networking Academy</h4>
+                <p>Certificaciones globales en:</p>
+                <ul class="cert-list">
+                  <li>Introduction to Cybersecurity</li>
+                  <li>Introduction to Data Science</li>
+                  <li>Introduction to IoT</li>
                 </ul>
-                <a href="./assets/docs/CV_ANDERSON_28042026.pdf" class="nav-cta" download>
-                    <i class="fas fa-file-download"></i>
-                    CV
-                </a>
+              </div>
             </div>
-        </nav>
+          </div>
+        </div>
+      </section>
 
-        <header class="hero" id="home">
-            <div class="container hero-content-wrapper">
-                <div class="hero-content">
-                    <p class="greeting reveal-up">¡Hola Mundo! 👋 Soy</p>
-                    <h1 class="glitch reveal-up delay-1" data-text="Anderson Quispe">Anderson Quispe</h1>
-                    <h2 class="role reveal-up delay-2">
-                        <span id="typing-text"></span><span class="cursor">|</span>
-                    </h2>
-                    <p class="hero-desc reveal-up delay-3">
-                        Ingeniero de Software enfocado en arquitecturas escalables, APIs RESTful y sistemas construidos para producción. Egresado de Diseño y Desarrollo de Software (2022-2025).
-                    </p>
-                    <div class="hero-actions reveal-up delay-4">
-                        <a href="./assets/docs/CV_ANDERSON_28042026.pdf" class="btn btn-primary mag-btn" download><i class="fas fa-file-download"></i> Descargar CV</a>
-                        <a href="#projects" class="btn btn-secondary mag-btn">Ver Proyectos</a>
-                    </div>
-                </div>
-
-                <div class="hero-image reveal-left delay-4">
-                    <div class="profile-glow"></div>
-                    <img src="./assets/image.png" alt="Anderson Quispe - Profile" class="profile-pic">
-                    <div class="float-badge fb-1 glass-card"><i class="fab fa-angular"></i></div>
-                    <div class="float-badge fb-2 glass-card"><i class="fab fa-node-js"></i></div>
-                    <div class="float-badge fb-3 glass-card"><i class="fas fa-server"></i></div>
-                </div>
+      <section id="projects" class="section experience-section">
+        <div class="container">
+          <h2 class="section-title reveal-fade" data-text="04. Experiencia & Proyectos">
+            <span>04.</span> Experiencia & Proyectos
+          </h2>
+          <div class="experience-strip reveal-up">
+            <div>
+              <strong>+10</strong>
+              <span>proyectos y sistemas</span>
             </div>
-            
-            <div class="scroll-indicator">
-                <span>Scroll</span>
-                <i class="fas fa-chevron-down"></i>
+            <div>
+              <strong>5</strong>
+              <span>sectores aplicados</span>
             </div>
-        </header>
-
-        <section id="about" class="section">
-            <div class="container">
-                <h2 class="section-title reveal-fade" data-text="01. Sobre Mí"><span>01.</span> Sobre Mí</h2>
-                <div class="about-grid">
-                    <div class="about-text glass-card card-glow reveal-left">
-                        <p>
-                            Soy un desarrollador de software con experiencia combinando diseño técnico, implementación de módulos y optimización de procesos. Mi enfoque profesional se puede resumir en:
-                        </p>
-                        <blockquote class="accent-quote">
-                            "Código claro. Arquitectura con intención. Documentación que genera confianza."
-                        </blockquote>
-                        <p>
-                            He participado en soluciones para salud, turismo, logística y gestión operativa, enfocándome en Angular para interacciones dinámicas en el cliente y NestJS para el robusto ecosistema backend.
-                        </p>
-                    </div>
-                    <div class="about-stats glass-card card-glow reveal-right">
-                        <div class="stat-item">
-                            <i class="fas fa-code"></i>
-                            <h3>Full-Stack</h3>
-                            <p>Sistemas End-to-End</p>
-                        </div>
-                        <div class="stat-item">
-                            <i class="fas fa-server"></i>
-                            <h3>Arquitectura</h3>
-                            <p>Clean & Modular</p>
-                        </div>
-                        <div class="stat-item">
-                            <i class="fas fa-shield-alt"></i>
-                            <h3>Seguridad</h3>
-                            <p>Prevención & Diseño Resistente</p>
-                        </div>
-                    </div>
-                </div>
+            <div>
+              <strong>VPS</strong>
+              <span>despliegues por SSH</span>
             </div>
-        </section>
+          </div>
 
-        <section id="skills" class="section">
-            <div class="container">
-                <h2 class="section-title reveal-fade" data-text="02. Habilidades"><span>02.</span> Habilidades</h2>
-                <div class="skills-grid">
-                    <div class="skill-category glass-card card-glow hover-glow reveal-up">
-                        <div class="category-icon"><i class="fas fa-database"></i></div>
-                        <h3>Backend & DB</h3>
-                        <div class="skill-tags">
-                            <span>NestJS</span><span>Node.js</span><span>PHP</span><span>MySQL</span><span>SQLite</span><span>Prisma ORM</span><span>REST APIs</span>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-category glass-card card-glow hover-glow reveal-up delay-1">
-                        <div class="category-icon"><i class="fas fa-laptop-code"></i></div>
-                        <h3>Frontend</h3>
-                        <div class="skill-tags">
-                            <span>Angular</span><span>TypeScript</span><span>JavaScript</span><span>HTML5</span><span>SCSS</span><span>CSS3</span>
-                        </div>
-                    </div>
+          <div class="experience-grid">
+            <article class="experience-card glass-card card-glow reveal-up">
+              <div class="experience-card-top">
+                <div class="experience-icon"><i class="fas fa-route"></i></div>
+                <span class="experience-date">Ago 2025 - Dic 2025</span>
+              </div>
+              <span class="experience-company">HaruSoft</span>
+              <h3>Antare Travel</h3>
+              <p>
+                Sistema turístico para gestión de reservas, paquetes y servicios de agencia con
+                backend escalable y documentación API.
+              </p>
+              <ul class="experience-points">
+                <li>Arquitectura backend modular para flujos turísticos.</li>
+                <li>Contratos API documentados con Swagger/OpenAPI.</li>
+              </ul>
+              <div class="project-tech">
+                <span>NestJS</span><span>Prisma</span><span>MySQL</span><span>Swagger</span
+                ><span>Angular</span>
+              </div>
+            </article>
 
-                    <div class="skill-category glass-card card-glow hover-glow reveal-up delay-2">
-                        <div class="category-icon"><i class="fas fa-brain"></i></div>
-                        <h3>Data & AI</h3>
-                        <div class="skill-tags">
-                            <span>Python</span><span>TensorFlow</span><span>PyTorch</span><span>OpenCV</span><span>Scikit-Learn</span><span>YOLO</span><span>Pandas</span>
-                        </div>
-                    </div>
+            <article class="experience-card glass-card card-glow reveal-up delay-1">
+              <div class="experience-card-top">
+                <div class="experience-icon"><i class="fas fa-heart-pulse"></i></div>
+                <span class="experience-date">Ene 2025 - Ago 2025</span>
+              </div>
+              <span class="experience-company">HaruSoft</span>
+              <h3>IMESYS</h3>
+              <p>
+                Sistema médico inteligente orientado al registro clínico, administración de
+                pacientes y protección de información sensible.
+              </p>
+              <ul class="experience-points">
+                <li>Modelado de datos para flujos de atención médica.</li>
+                <li>Módulos robustos para confidencialidad operativa.</li>
+              </ul>
+              <div class="project-tech">
+                <span>NestJS</span><span>TypeORM</span><span>MySQL</span><span>Angular</span>
+              </div>
+            </article>
 
-                    <div class="skill-category glass-card card-glow hover-glow reveal-up delay-3">
-                        <div class="category-icon"><i class="fas fa-tools"></i></div>
-                        <h3>Herramientas & Mobile</h3>
-                        <div class="skill-tags">
-                            <span>Git/GitHub</span><span>Linux</span><span>Capacitor</span><span>Kali Linux</span><span>Nmap</span><span>Swagger</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+            <article class="experience-card glass-card card-glow reveal-up delay-2">
+              <div class="experience-card-top">
+                <div class="experience-icon"><i class="fas fa-utensils"></i></div>
+                <span class="experience-date">Abr 2025 - Jun 2025</span>
+              </div>
+              <span class="experience-company">Operativa Restobar</span>
+              <h3>Rosa Negra / Paramo</h3>
+              <p>
+                Flujo operativo integral para caja, pedidos, consumo interno, productos e
+                inventarios ligados a facturación.
+              </p>
+              <ul class="experience-points">
+                <li>Modelado transaccional para ventas e inventario.</li>
+                <li>Paneles operativos para control diario del negocio.</li>
+              </ul>
+              <div class="project-tech">
+                <span>Angular</span><span>NestJS</span><span>MySQL</span>
+              </div>
+            </article>
 
-        <section id="education" class="section">
-            <div class="container">
-                <h2 class="section-title reveal-fade" data-text="03. Educación & Certificados"><span>03.</span> Educación & Certificados</h2>
-                
-                <div class="timeline" id="timeline-container">
-                    <!-- Progress Line -->
-                    <div class="timeline-line">
-                        <div class="timeline-progress" id="timeline-progress"></div>
-                    </div>
-                    <div class="timeline-item reveal-left">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content glass-card card-glow">
-                            <span class="timeline-date">2022 - 2025</span>
-                            <h3>Egresado en Desarrollo de Software</h3>
-                            <h4>Institución: SENATI</h4>
-                            <p>Egresado de la carrera con alto enfoque en innovación tecnológica. 4to lugar en el concurso SENATI Innova, Dirección Zonal Cusco.</p>
-                            <span class="badge">Diploma de Honor</span>
-                        </div>
-                    </div>
-                    
-                    <div class="timeline-item reveal-left">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content glass-card card-glow">
-                            <span class="timeline-date">2025</span>
-                            <h3>Gestión de Proyectos Ágiles & Lean</h3>
-                            <h4>Institución: SENATI</h4>
-                            <p>Formación en dirección de proyectos aplicando marcos de trabajo Agile y enfoques corporativos Lean para reducción de residuos y eficiencia.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="timeline-item reveal-left">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content glass-card card-glow">
-                            <span class="timeline-date">2022 - 2023</span>
-                            <h3>Tecnología de la Información</h3>
-                            <h4>Institución: Cisco Networking Academy</h4>
-                            <p>Certificaciones globales en:</p>
-                            <ul class="cert-list">
-                                <li>Introduction to Cybersecurity</li>
-                                <li>Introduction to Data Science</li>
-                                <li>Introduction to IoT</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+            <article class="experience-card glass-card card-glow reveal-up">
+              <div class="experience-card-top">
+                <div class="experience-icon"><i class="fas fa-building"></i></div>
+                <span class="experience-date">Oct 2024 - Ene 2025</span>
+              </div>
+              <span class="experience-company">Ideande Systems</span>
+              <h3>Plataforma turística corporativa</h3>
+              <p>
+                Optimización estructural de datos, reservas, clientes y paneles administrativos para
+                mejorar eficiencia operativa.
+              </p>
+              <ul class="experience-points">
+                <li>Flujos condicionales para clientes y reservas.</li>
+                <li>Mejoras en estructura de datos y procesos.</li>
+              </ul>
+              <div class="project-tech">
+                <span>Angular</span><span>Node.js</span><span>PHP</span><span>MySQL</span>
+              </div>
+            </article>
 
-        <section id="projects" class="section experience-section">
-            <div class="container">
-                <h2 class="section-title reveal-fade" data-text="04. Experiencia & Proyectos"><span>04.</span> Experiencia & Proyectos</h2>
-                <div class="experience-strip reveal-up">
-                    <div>
-                        <strong>+10</strong>
-                        <span>proyectos y sistemas</span>
-                    </div>
-                    <div>
-                        <strong>5</strong>
-                        <span>sectores aplicados</span>
-                    </div>
-                    <div>
-                        <strong>VPS</strong>
-                        <span>despliegues por SSH</span>
-                    </div>
-                </div>
+            <article class="experience-card glass-card card-glow reveal-up delay-1">
+              <div class="experience-card-top">
+                <div class="experience-icon"><i class="fas fa-boxes-stacked"></i></div>
+                <span class="experience-date">Feb 2024 - Sep 2024</span>
+              </div>
+              <span class="experience-company">CCORESCO EIRL</span>
+              <h3>Sistema central de almacén</h3>
+              <p>
+                Control de inventario, monitoreo de stock operativo y soporte logístico para
+                entradas, salidas y redistribución.
+              </p>
+              <ul class="experience-points">
+                <li>Validación de movimientos internos de almacén.</li>
+                <li>Soporte para decisiones logísticas y stock.</li>
+              </ul>
+              <div class="project-tech"><span>PHP</span><span>Node.js</span><span>MySQL</span></div>
+            </article>
 
-                <div class="experience-grid">
-                    <article class="experience-card glass-card card-glow reveal-up">
-                        <div class="experience-card-top">
-                            <div class="experience-icon"><i class="fas fa-route"></i></div>
-                            <span class="experience-date">Ago 2025 - Dic 2025</span>
-                        </div>
-                        <span class="experience-company">HaruSoft</span>
-                        <h3>Antare Travel</h3>
-                        <p>Sistema turístico para gestión de reservas, paquetes y servicios de agencia con backend escalable y documentación API.</p>
-                        <ul class="experience-points">
-                            <li>Arquitectura backend modular para flujos turísticos.</li>
-                            <li>Contratos API documentados con Swagger/OpenAPI.</li>
-                        </ul>
-                        <div class="project-tech">
-                            <span>NestJS</span><span>Prisma</span><span>MySQL</span><span>Swagger</span><span>Angular</span>
-                        </div>
-                    </article>
+            <article
+              class="experience-card infrastructure-card glass-card card-glow reveal-up delay-2"
+            >
+              <div class="experience-card-top">
+                <div class="experience-icon"><i class="fas fa-cloud-arrow-up"></i></div>
+                <span class="experience-date">Infraestructura</span>
+              </div>
+              <span class="experience-company">Producción & APIs</span>
+              <h3>Despliegues, documentación y contratos API</h3>
+              <p>
+                Administración de servidores por SSH, despliegues en VPS como Opalstack y
+                documentación de APIs para integración frontend/backend.
+              </p>
+              <ul class="experience-points">
+                <li>Deploy de aplicaciones en entornos remotos.</li>
+                <li>Swagger para estandarizar contratos REST.</li>
+              </ul>
+              <div class="project-tech">
+                <span>Linux SSH</span><span>Opalstack</span><span>Swagger</span
+                ><span>REST APIs</span>
+              </div>
+            </article>
+          </div>
 
-                    <article class="experience-card glass-card card-glow reveal-up delay-1">
-                        <div class="experience-card-top">
-                            <div class="experience-icon"><i class="fas fa-heart-pulse"></i></div>
-                            <span class="experience-date">Ene 2025 - Ago 2025</span>
-                        </div>
-                        <span class="experience-company">HaruSoft</span>
-                        <h3>IMESYS</h3>
-                        <p>Sistema médico inteligente orientado al registro clínico, administración de pacientes y protección de información sensible.</p>
-                        <ul class="experience-points">
-                            <li>Modelado de datos para flujos de atención médica.</li>
-                            <li>Módulos robustos para confidencialidad operativa.</li>
-                        </ul>
-                        <div class="project-tech">
-                            <span>NestJS</span><span>TypeORM</span><span>MySQL</span><span>Angular</span>
-                        </div>
-                    </article>
+          <div class="repo-actions reveal-up">
+            <a href="https://github.com/Andiquis/RosaNegra" target="_blank" class="repo-link">
+              <i class="fab fa-github"></i>
+              RosaNegra
+            </a>
+            <a href="https://github.com/Andiquis/xQore" target="_blank" class="repo-link">
+              <i class="fab fa-github"></i>
+              xQore
+            </a>
+          </div>
+        </div>
+      </section>
 
-                    <article class="experience-card glass-card card-glow reveal-up delay-2">
-                        <div class="experience-card-top">
-                            <div class="experience-icon"><i class="fas fa-utensils"></i></div>
-                            <span class="experience-date">Abr 2025 - Jun 2025</span>
-                        </div>
-                        <span class="experience-company">Operativa Restobar</span>
-                        <h3>Rosa Negra / Paramo</h3>
-                        <p>Flujo operativo integral para caja, pedidos, consumo interno, productos e inventarios ligados a facturación.</p>
-                        <ul class="experience-points">
-                            <li>Modelado transaccional para ventas e inventario.</li>
-                            <li>Paneles operativos para control diario del negocio.</li>
-                        </ul>
-                        <div class="project-tech">
-                            <span>Angular</span><span>NestJS</span><span>MySQL</span>
-                        </div>
-                    </article>
-
-                    <article class="experience-card glass-card card-glow reveal-up">
-                        <div class="experience-card-top">
-                            <div class="experience-icon"><i class="fas fa-building"></i></div>
-                            <span class="experience-date">Oct 2024 - Ene 2025</span>
-                        </div>
-                        <span class="experience-company">Ideande Systems</span>
-                        <h3>Plataforma turística corporativa</h3>
-                        <p>Optimización estructural de datos, reservas, clientes y paneles administrativos para mejorar eficiencia operativa.</p>
-                        <ul class="experience-points">
-                            <li>Flujos condicionales para clientes y reservas.</li>
-                            <li>Mejoras en estructura de datos y procesos.</li>
-                        </ul>
-                        <div class="project-tech">
-                            <span>Angular</span><span>Node.js</span><span>PHP</span><span>MySQL</span>
-                        </div>
-                    </article>
-
-                    <article class="experience-card glass-card card-glow reveal-up delay-1">
-                        <div class="experience-card-top">
-                            <div class="experience-icon"><i class="fas fa-boxes-stacked"></i></div>
-                            <span class="experience-date">Feb 2024 - Sep 2024</span>
-                        </div>
-                        <span class="experience-company">CCORESCO EIRL</span>
-                        <h3>Sistema central de almacén</h3>
-                        <p>Control de inventario, monitoreo de stock operativo y soporte logístico para entradas, salidas y redistribución.</p>
-                        <ul class="experience-points">
-                            <li>Validación de movimientos internos de almacén.</li>
-                            <li>Soporte para decisiones logísticas y stock.</li>
-                        </ul>
-                        <div class="project-tech">
-                            <span>PHP</span><span>Node.js</span><span>MySQL</span>
-                        </div>
-                    </article>
-
-                    <article class="experience-card infrastructure-card glass-card card-glow reveal-up delay-2">
-                        <div class="experience-card-top">
-                            <div class="experience-icon"><i class="fas fa-cloud-arrow-up"></i></div>
-                            <span class="experience-date">Infraestructura</span>
-                        </div>
-                        <span class="experience-company">Producción & APIs</span>
-                        <h3>Despliegues, documentación y contratos API</h3>
-                        <p>Administración de servidores por SSH, despliegues en VPS como Opalstack y documentación de APIs para integración frontend/backend.</p>
-                        <ul class="experience-points">
-                            <li>Deploy de aplicaciones en entornos remotos.</li>
-                            <li>Swagger para estandarizar contratos REST.</li>
-                        </ul>
-                        <div class="project-tech">
-                            <span>Linux SSH</span><span>Opalstack</span><span>Swagger</span><span>REST APIs</span>
-                        </div>
-                    </article>
-                </div>
-
-                <div class="repo-actions reveal-up">
-                    <a href="https://github.com/Andiquis/RosaNegra" target="_blank" class="repo-link">
-                        <i class="fab fa-github"></i>
-                        RosaNegra
-                    </a>
-                    <a href="https://github.com/Andiquis/xQore" target="_blank" class="repo-link">
-                        <i class="fab fa-github"></i>
-                        xQore
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <footer class="site-footer">
-            <div class="container text-center reveal-fade">
-                <h2 class="footer-cta">¿Listo para construir el futuro?</h2>
-                <div class="social-links">
-                    <a href="https://wa.me/51942287756" aria-label="WhatsApp" class="social-icon" target="_blank">
-                        <i class="fab fa-whatsapp"></i>
-                    </a>
-                    <a href="https://github.com/Andiquis" aria-label="GitHub" class="social-icon" target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://linkedin.com/in/anderson-quispe-bb9a68298" aria-label="LinkedIn" class="social-icon" target="_blank">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="mailto:andiquispe9422@gmail.com" aria-label="Email" class="social-icon">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </div>
-                <p class="copy">Diseñado & Desarrollado por Anderson Quispe &copy; <span id="year">2026</span></p>
-            </div>
-        </footer>
+      <footer class="site-footer">
+        <div class="container text-center reveal-fade">
+          <h2 class="footer-cta">¿Listo para construir el futuro?</h2>
+          <div class="social-links">
+            <a
+              href="https://wa.me/51942287756"
+              aria-label="WhatsApp"
+              class="social-icon"
+              target="_blank"
+            >
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a
+              href="https://github.com/Andiquis"
+              aria-label="GitHub"
+              class="social-icon"
+              target="_blank"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://linkedin.com/in/anderson-quispe-bb9a68298"
+              aria-label="LinkedIn"
+              class="social-icon"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:andiquispe9422@gmail.com" aria-label="Email" class="social-icon">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+          <p class="copy">
+            Diseñado & Desarrollado por Anderson Quispe &copy; <span id="year">2026</span>
+          </p>
+        </div>
+      </footer>
     </div>
 
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
